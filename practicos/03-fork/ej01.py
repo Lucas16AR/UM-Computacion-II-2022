@@ -1,4 +1,4 @@
-#Ejercicio 3.2 - Procesos
+#Ejercicio 1 - Procesos (fork)
 
 import getopt, sys, os
 
@@ -19,12 +19,10 @@ def hijo():
             print(f'{os.getpid()} - {os.getppid()}: {suma}')
             os._exit(0)
 
-
 def ayuda_uso() -> str:
-    return f"""[Ejecucion] python3 ej03-2.py -n "numero de hijos"
+    return f"""[Ejecucion] python3 ej01.py -n "numero de hijos"
                         [Modo verboso] agregar -v
                         [Ayuda] agregar -h"""
-
 
 modo_verboso = False
 for (op,ar) in opt:
@@ -34,7 +32,6 @@ for (op,ar) in opt:
         print(ayuda_uso())
     elif op == '-v':
         modo_verboso = True
-
 
 try:
     for i in range(num_hjos):
