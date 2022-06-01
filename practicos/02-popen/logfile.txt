@@ -1,0 +1,1 @@
+2022-06-01 11:52:33.861643: Comando ls se ha ejecuta correctamente
