@@ -1,4 +1,4 @@
-#Ejercicio 2 - subprocess.Popen
+#Ejercicio 1 - subprocess.Popen
 
 import sys
 import subprocess

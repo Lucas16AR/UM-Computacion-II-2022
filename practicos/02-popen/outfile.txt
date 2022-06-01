@@ -1,3 +1,4 @@
-ej02.py
+ej01.py
+logfile.txt
 outfile.txt
 
