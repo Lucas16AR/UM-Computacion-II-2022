@@ -1,6 +1,6 @@
 #done: Argumentos - [args]
-#done: subprocess.Popen - [popen]
-Procesos - [fork]
+#done: Subprocess.Popen - [popen]
+#done: Procesos - [fork]
 Procesos - [fork_fd]
 Procesos - [pipe]
 Sincronizacion y shm con mmap - [mmap_sig]
