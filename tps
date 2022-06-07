@@ -1,7 +1,7 @@
 #done: Argumentos - [args]
 #done: Subprocess.Popen - [popen]
 #done: Procesos - [fork]
-Procesos - [fork_fd]
+#done: Procesos - [fork_fd]
 Procesos - [pipe]
 Sincronizacion y shm con mmap - [mmap_sig]
 Rot13 con multiprocessing - [mp_rot13]
