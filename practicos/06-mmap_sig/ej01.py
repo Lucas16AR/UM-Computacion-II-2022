@@ -74,3 +74,7 @@ else:
     for i in range(2):
         os.wait()
     print("Padre espero y ahora termina")
+
+def write(name: str):
+    fd = open(str(name), "w+")
+    return fd
