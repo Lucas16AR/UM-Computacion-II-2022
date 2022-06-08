@@ -20,6 +20,10 @@ for (opt,arg) in opt:
 
 memory = mmap.mmap(-1, 100)
 
+#def write(name: str):
+#    fd = open(str(name), "w+")
+#    return fd
+
 def handler_father(s, f):
     global advance
     if s == signal.SIGUSR1:
@@ -75,6 +79,3 @@ else:
         os.wait()
     print("Padre espero y ahora termina")
 
-def write(name: str):
-    fd = open(str(name), "w+")
-    return fd
