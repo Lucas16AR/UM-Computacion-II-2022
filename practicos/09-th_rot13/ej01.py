@@ -1,31 +1,20 @@
-'''
-Generar dos hilos usando threading
-Un hilo lee desde stdin un texto del usuario (escribir en mecanismo IPC)
-Hilo 2 lee desde mecanismo IPC, encripta con algorithm rot13, almacena en cola de mensaje
-Hijo 1 lee la cola de mensajes, mostrar contenido por pantalla
-Entregar antes de viernes
-'''
+import threading as th , codecs, sys, os
 
+def read(w):
+    print("Ingrese una oracion por favor: ")
+    line = sys.stdin.readline()
+    os.write(w, line.encode("ascii"))
 
-
-import threading as th , codecs, sys, queue, os
-
-def thread_1():
-
-
-
-    pass
-
-def thread_2():
-
-
-
-    pass
-
-
-
-def main():
-    pass
+def write(r):
+    line = os.read(r, 100).decode()
+    line_encode = codecs.encode(line, 'rot_13')
+    print(f'Texto cifrado: {line_encode}')
 
 if __name__ == '__main__':
-    main()
+    r, w = os.pipe()
+    th1 = th.Thread(target = read, args = (w,))
+    th2 = th.Thread(target = write, args = (r,))
+    th1.start()
+    th2.start()
+    th1.join()
+    th2.join()

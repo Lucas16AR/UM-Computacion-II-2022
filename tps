@@ -6,4 +6,4 @@
 #done: Sincronizacion y shm con mmap - [mmap_sig]
 #done: Rot13 con multiprocessing - [mp_rot13]
 #done: Calculo matricial - [matriz_pool]
-Rot13 con threading - [th_rot13]
+#done: Rot13 con threading - [th_rot13]
