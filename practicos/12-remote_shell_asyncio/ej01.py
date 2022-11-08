@@ -19,7 +19,7 @@ async def main():
         print(f'Recibido: {data.decode()!r}')
         await writer.wait_closed()
 
-        for (opt, arg) in opt:
+        for (opt, args) in opt:
             if opt == '-1':
                 file_path = args
                 file = open(str(file_path), 'a')

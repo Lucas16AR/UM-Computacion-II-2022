@@ -7,3 +7,7 @@
 #done: Rot13 con multiprocessing - [mp_rot13]
 #done: Calculo matricial - [matriz_pool]
 #done: Rot13 con threading - [th_rot13]
+Remote shell [serversocket]
+Remote shell [remoteshell_ipv6]
+#done: Remote shell [remote_shell_asyncio]
+Calculo matricial [celery]
