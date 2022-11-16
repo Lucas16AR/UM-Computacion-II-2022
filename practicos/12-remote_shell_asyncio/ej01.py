@@ -5,7 +5,7 @@ async def main():
     try:
         reader, writer = await asyncio.open_connection('127.0.0.1', 8888)
     except socket.error:
-        print("No se pudo conectar")
+        print("Error de conexion")
         sys.exit()
     print("----------Comando prompt----------")
     comand = ""

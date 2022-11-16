@@ -14,7 +14,7 @@ async def srv(reader, writer):
     result = subprocess.Popen([data], shell = True, stdout = subprocess.PIPE, stderr=subprocess.PIPE, text=True)
     stdout, stderr = result.communicate()
     if stdout != "":
-        message = "Ok\n" + stdout
+        message = "Exito\n" + stdout
     elif stderr != "":
         message = "Error\n" + stderr
         writer.write(message.encode("ascii"))
