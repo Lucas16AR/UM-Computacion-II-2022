@@ -9,5 +9,5 @@
 #done: Rot13 con threading - [th_rot13]
 #done: Remote shell [serversocket]
 #done: Remote shell [remoteshell_ipv6]
-Remote shell [remote_shell_asyncio]
+#done: Remote shell [remote_shell_asyncio]
 #done: Calculo matricial [celery]
